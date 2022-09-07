@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(18, 159, 202);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    margin-top: 3%;
+    color: rgb(253, 244, 236);
+    font-size: 4em;
+    text-shadow: 4px 2px rgb(255, 81, 0);
+
+}
+button {
+    color: rgb(253,244,236);
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgb(255, 81, 0);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    background-color: transparent;
+    color: rgb(253, 244, 236);
+    height: 40px;
+    width: 400px;
+    font-size: 1em;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(253, 244, 236);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(253, 244, 236);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:rgb(253, 244, 236);
+  }
+  textarea:focus, input:focus{
+    outline: none;
+}
+li{
+    float: left;
+    width: 200px;
+    margin: 20px;
+    padding: none;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 10%;
+    box-shadow: 10px 5px rgb(255, 81, 0);
+}
+#location{
+    font-size: 30px;
+    height: 20px;
+}
+#temperature {
+    font-size: 50px;
+    padding: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#icon {
+    padding: none;
+    margin: none;
+    height: 20px;
+}
+#humidity {
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
+}
+#description {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        margin-top: 25%;
+    }
+}
