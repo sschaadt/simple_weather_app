@@ -13,7 +13,7 @@ function getWeather() {
     e.preventDefault();
     loc = document.getElementById("input").value;
 
-    let apiLink = `http://api.openweathermap.org/data/2.5/weather?q=${loc}&APPID=${apiKey}`;
+    let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&APPID=${apiKey}`;
 
     fetch(apiLink)
       .then((response) => {
@@ -38,7 +38,7 @@ function getWeather() {
         let description = document.createElement("p");
         let icon = document.createElement("img");
         icon.setAttribute("class","icon");
-        icon.src = `http://openweathermap.org/img/wn/${weatherCode}@2x.png`;
+        icon.src = `https://openweathermap.org/img/wn/${weatherCode}@2x.png`;
         description.setAttribute("id","description");
         temperature.appendChild(document.createTextNode(`${currTempF}\u00B0F`));
         humidity.appendChild(document.createTextNode(`Humidity: ${currHum}%`));
